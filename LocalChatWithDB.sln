@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34031.279
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LocalChatWithDB", "LocalChatWithDB\LocalChatWithDB.csproj", "{BE91DBBC-DBF3-418F-A7AB-7A088022BEF7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Host", "Host\Host.csproj", "{3A29CCBD-2F8A-48F2-AD17-8F278FB98024}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClientChat", "ClientChat\ClientChat.csproj", "{EA13A377-6F43-4A94-9E14-26A4B33B4739}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BE91DBBC-DBF3-418F-A7AB-7A088022BEF7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BE91DBBC-DBF3-418F-A7AB-7A088022BEF7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BE91DBBC-DBF3-418F-A7AB-7A088022BEF7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BE91DBBC-DBF3-418F-A7AB-7A088022BEF7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3A29CCBD-2F8A-48F2-AD17-8F278FB98024}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3A29CCBD-2F8A-48F2-AD17-8F278FB98024}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3A29CCBD-2F8A-48F2-AD17-8F278FB98024}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3A29CCBD-2F8A-48F2-AD17-8F278FB98024}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EA13A377-6F43-4A94-9E14-26A4B33B4739}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA13A377-6F43-4A94-9E14-26A4B33B4739}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EA13A377-6F43-4A94-9E14-26A4B33B4739}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EA13A377-6F43-4A94-9E14-26A4B33B4739}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {650EBD48-A9C6-4FEF-8096-750F04AE712D}
+	EndGlobalSection
+EndGlobal
