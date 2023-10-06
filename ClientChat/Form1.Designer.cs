@@ -48,6 +48,7 @@
             // 
             this.tbPassword.Location = new System.Drawing.Point(688, 40);
             this.tbPassword.Name = "tbPassword";
+            this.tbPassword.PasswordChar = '*';
             this.tbPassword.Size = new System.Drawing.Size(100, 26);
             this.tbPassword.TabIndex = 2;
             // 
@@ -100,7 +101,7 @@
         #endregion
         private System.Windows.Forms.TextBox tbInsert;
         private System.Windows.Forms.TextBox tbPassword;
-        private System.Windows.Forms.TextBox tbUsername;
+        public System.Windows.Forms.TextBox tbUsername;
         private System.Windows.Forms.Button bConnect;
         private System.Windows.Forms.ListBox lbCallBack;
     }

@@ -9,13 +9,20 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.ServiceModel;
-using ClientChat.ServiceChat;
+using ClientChat.ServiceClientNumTwo;
 using System.Runtime.Remoting.Messaging;
+using System.Data.SqlClient;
+using System.Configuration;
 
 namespace ClientChat
 {
     public partial class Form1 : Form , IWCFserviceCallback
     {
+        public string Txt {
+            get { return tbUsername.Text; }
+            set { tbUsername.Text = value; } 
+        }
+
         bool isConnected = false;
         WCFserviceClient client;
         int ID;
@@ -27,15 +34,16 @@ namespace ClientChat
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            
         }
         void Connected()
         {
             if (!isConnected)
             {
+
                 client = new WCFserviceClient(new System.ServiceModel.InstanceContext(this));
-                string clientID = tbPassword.Text;
-                ID = client.Connect(tbUsername.Text);
+                IDpassword = tbPassword.Text;
+                ID = client.Connect(Txt);
                 bConnect.Enabled = false;
                 bConnect.Text = "Disconnected";
                 isConnected = true;

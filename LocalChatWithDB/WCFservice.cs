@@ -27,7 +27,7 @@ namespace LocalChatWithDB
             };
             nextId++;
 
-            SendMessage(": " + user.Name + " подключился к чату!", 0);
+            SendMessage("| " + user.Name + " подключился к чату!", 0);
             users.Add(user);
             return user.ID;
         }
